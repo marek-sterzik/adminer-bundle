@@ -17,7 +17,7 @@ class AdminerController extends AbstractController
 
     public function index(): Response
     {
-        $bootFile = dirname(__DIR__, 2) . "/adminer/boot.php";
+        $bootFile = dirname(__DIR__) . "/adminer/boot.php";
         return new StreamedResponse(
             function () use ($bootFile) {
                 $httpAuth = null;
