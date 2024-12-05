@@ -15,7 +15,7 @@ class AdminerController extends AbstractController
     ) {
     }
 
-    public function pageAdminer(): Response
+    public function index(): Response
     {
         $bootFile = dirname(__DIR__, 2) . "/adminer/boot.php";
         return new StreamedResponse(
