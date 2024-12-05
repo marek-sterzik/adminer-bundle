@@ -11,7 +11,7 @@
     ],
     "autoload" : {
         "psr-4": {
-            "Sterzik\\Adminer\\": "src"
+            "Sterzik\\AdminerBundle\\": "src"
         }
     },
     "require": {
