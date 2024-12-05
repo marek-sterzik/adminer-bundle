@@ -20,7 +20,7 @@ class AdminerController extends AbstractController
     {
         $bootFile = dirname(__DIR__, 2) . "/adminer/boot.php";
         return new StreamedResponse(
-            function () {
+            function () use ($bootFile) {
                 $httpAuth = null;
                 $dbConf = $this->databaseUrl;
                 include $bootFile;
