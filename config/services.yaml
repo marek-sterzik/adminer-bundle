@@ -1,12 +1,5 @@
 services:
-    _defaults:
-        autowire: true
-        autoconfigure: true
-    Sterzik\AdminerBundle\:
-        resource: '../src/'
-        exclude:
-            - '../src/AdminerBundle.php'
-    Sterzik\AdminerBundle\Controller\:
-        resource: '../src/Controller'
+    Sterzik\AdminerBundle\AdminerController:
+        class: Sterzik\AdminerBundle\AdminerController
         tags: ['controller.service_arguments']
 

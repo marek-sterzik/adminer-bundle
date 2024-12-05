@@ -1,6 +1,6 @@
 <?php
 
-namespace Sterzik\AdminerBundle\Controller;
+namespace Sterzik\AdminerBundle;
 
 use Symfony\Component\HttpFoundation\StreamedResponse;
 use Symfony\Component\HttpFoundation\Response;
@@ -15,7 +15,6 @@ class AdminerController extends AbstractController
     ) {
     }
 
-    #[Route("/adminer", name: "adminer_bundle.adminer")]
     public function pageAdminer(): Response
     {
         $bootFile = dirname(__DIR__, 2) . "/adminer/boot.php";
