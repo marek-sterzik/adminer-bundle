@@ -1,4 +1,5 @@
-adminer: 
+adminer:
+    name: adminer_bundle.adminer
     path: /adminer
     controller: Sterzik\AdminerBundle\AdminerController::index
 
