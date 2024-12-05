@@ -1,5 +1,7 @@
 services:
     Sterzik\AdminerBundle\AdminerController:
         class: Sterzik\AdminerBundle\AdminerController
+        calls:
+          - [setContainer, ["@service_container"]]
         tags: ['controller.service_arguments']
 
