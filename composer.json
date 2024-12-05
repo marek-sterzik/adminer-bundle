@@ -1,0 +1,20 @@
+{
+    "name": "sterzik/adminer-bundle",
+    "description": "Adminer bridge for symfony",
+    "license": "MIT",
+    "homepage": "https://github.com/marek-sterzik/adminer-bundle",
+    "authors": [
+        {
+            "name": "Marek Sterzik",
+            "email": "marek@milimetr.org"
+        }
+    ],
+    "autoload" : {
+        "psr-4": {
+            "Sterzik\\Adminer\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=7.1"
+    }
+}
